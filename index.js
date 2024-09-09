@@ -6,7 +6,7 @@
  * @returns {number} temperature in °C
  */
 function convertToCelsius(f) {
-  // TODO
+  return (f-30)/2;
 }
 
 /**
@@ -23,7 +23,27 @@ function convertToCelsius(f) {
  * the given Fahrenheit temperature `f`
  */
 function describeTemperature(f) {
-  // TODO
+
+  if (f <= 31)
+  {
+    return string = 'very cold';
+  }
+  else if (f <= 63)
+  {
+    return string = 'cold';
+  }
+  else if (f <= 85)
+  {
+    return string = 'warm';
+  }
+  else if (f <= 99)
+  {
+    return string = 'hot';
+  }
+  else
+  {
+    return string = 'very hot';
+  }
 }
 
 /**
@@ -31,7 +51,7 @@ function describeTemperature(f) {
  * @returns {number} a random integer in the range [0, `limit`)
  */
 function getRandomInt(limit) {
-  // TODO
+  return Math.Floor(Math.Random * limit);
 }
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
